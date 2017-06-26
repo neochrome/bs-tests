@@ -1,0 +1,24 @@
+{
+  "name": "bs-web",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "clean:bs": "bsb -clean-world",
+    "clean": "run-p clean:*",
+    "build:bs": "bsb -make-world",
+    "build": "run-s build:bs",
+    "prewatch": "npm run clean",
+    "watch:bs": "bsb -make-world -w",
+    "watch:server": "nodemon -w ./lib/js/src/server -x npm start",
+    "watch": "run-p watch:*",
+    "start": "node ./lib/js/src/server/main.js"
+  },
+  "devDependencies": {
+    "bs-platform": "1.7.4",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2"
+  },
+  "dependencies": {
+    "bucklescript-tea": "^0.6.0"
+  }
+}

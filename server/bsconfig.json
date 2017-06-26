@@ -1,0 +1,11 @@
+{
+	"name": "bs-web",
+	"version": "0.1.0",
+	"sources": [
+		{ "dir": "src", "subdirs": ["client", "server"] }
+	],
+	"generate-merlin": true,
+	"bs-dependencies" : [
+		"bucklescript-tea"
+	]
+}

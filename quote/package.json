@@ -1,0 +1,30 @@
+{
+  "name": "bs-test",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "clean:all": "bsb -clean-world",
+    "build:bs": "bsb -make-world",
+    "build:js": "rollup -c",
+    "build": "run-s build:bs build:js",
+    "watch:bs": "bsb -make-world -w",
+    "watch:js": "rollup -c -w",
+    "watch": "run-p watch:* serve",
+    "serve": "serve public"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "1.7.5",
+    "bucklescript-tea": "^0.6.0",
+    "npm-run-all": "^4.0.2",
+    "rollup": "^0.43.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^4.0.0",
+    "serve": "^5.2.2"
+  },
+  "dependencies": {}
+}

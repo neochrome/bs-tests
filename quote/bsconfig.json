@@ -1,0 +1,11 @@
+{
+  "name": "bs-test",
+  "version": "0.1.0",
+  "sources": [
+    "src"
+  ],
+	"package-specs": ["es6"],
+  "bs-dependencies" : [
+		"bucklescript-tea"
+  ]
+}
